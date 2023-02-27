@@ -1,0 +1,395 @@
+/*importo el url de bootstrap Icons*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+/*importo API de google fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/*BOTON IR ARRIBA-TOP*/
+    .flechita{
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 9;
+    }
+    .flechita a{
+        height: 39px;
+        width: 37px;
+        text-align: center;
+        background: #1b1b1b;
+        display: block;
+        border-radius: 3px;
+    }
+    .flechita a span{
+        color: #f2f2f2;
+        font-size: 25px;
+        line-height: 39px;
+        cursor: pointer;
+    }
+
+/*Barra de navegacion*/
+    .navbar
+    {
+        /*padding: 2rem;*/
+        background-color: rgb(185, 225, 216);
+        padding: 0;
+    }
+    .navbar-collapse
+    {
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+    .Logo_navbar
+    {
+        font-size: 1.5rem;
+        color: rgb(107, 98, 236);
+        padding: 0;
+    }
+
+/*seccion (principal)*/
+
+    .imagen_perfil
+    {
+        border-radius: 50%;
+        background-size: cover;
+        margin: 20px;
+        border: black;
+    }
+
+    .bienvenida
+    {
+        background-color: rgb(127, 196, 180);
+        min-height: 450px;
+        text-align: center;
+        animation: change_grayscale 7s;
+    }
+
+    .bienvenida_principal
+    {
+        padding: 1rem;
+    }
+
+    @keyframes change_grayscale{
+        0% {
+            filter: grayscale(100%);
+        
+        }
+        100% {
+            filter: grayscale(0%);
+        }
+    }
+
+    .derechos_autor i, .derechos_autor p{
+        animation: on_off 1.5s infinite;
+    }
+
+    @keyframes on_off{
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+
+    .bienvenida_principal h2{
+        font-size: 1.5rem;
+        color: rgb(59, 61, 61);
+        
+    }
+
+/*Seccion sobre mi*/
+
+
+    .imagen_desarrollo{
+        padding: 1rem;
+    }
+
+/* Seccion habilidades */
+
+    .habilidades i{
+        font-size: 2.5rem;
+        color: rgb(79, 175, 145);
+        background-color:rgb(188, 228, 219);
+        padding: 8px;
+        border-radius: 50%;
+        margin-top: 0rem;
+        border: solid  rgb(130, 128, 127);
+        transition: all 2s;
+        animation: spin 3s infinite;
+    }
+    @keyframes spin {
+        0% {
+        transform: rotateY(0deg);
+        }
+        50% {
+            transform: rotateY(180deg);
+        }
+        100% {
+        transform: rotateY(360deg);
+        }
+    }
+
+    .habilidades_titulo{
+        font-size: 20px;
+        font-family: 'Rubik Gemstones', cursive;
+    }
+
+    .habilidades .columna {
+        border: 2px solid #8080804d;
+        padding: 7px;
+        transition: all 0.2s ease-in;
+    }
+
+    .habilidades .columna:hover {
+        color: white;
+        background: rgb(62, 42, 40);
+    }
+
+    .contenedor_badges {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    .badge{
+        margin: 3px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+/*Seccion Estudios*/
+    .estudios{
+        animation: change_color 4s infinite;
+    }
+
+    @keyframes change_color{
+        0% {
+        background-color:rgb(62, 42, 40);
+        
+        }
+        100% {
+            background-color:#52505c;
+        }
+    }
+
+/*Seccion proyectos*/
+
+    .proyecto{
+        position: relative;
+    }
+    .proyectos_recientes img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+        transition: all 0.2s ease;
+        border: solid;
+        border-color: rgb(62, 42, 40);
+    }
+
+    .overlay {
+        transition: all 0.2s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .overlay i{
+        font-size: 50px;
+        color: black;
+        margin: 2rem;
+    }
+
+    .overlay p{
+        margin-top: 3rem;
+        margin-bottom: -1rem;
+        
+    }
+
+    .proyecto:hover img{
+        opacity: 0.2;
+    }
+
+    .proyecto:hover .overlay {
+        opacity: 1;
+    }
+
+/*Seccion contacto*/
+    .segundo_contenedor{
+        color: rgb(1, 1, 1);
+        background-image: url("https://img.freepik.com/vector-gratis/fondo-acuarela-turquesa_125540-1259.jpg?w=2000");
+    }
+
+    .contenedor_iconos i{
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 10px 0;
+        padding: 10px;
+        justify-content: center;
+        animation: signal 3s infinite;
+    }
+    /*BOTON DESCARGA*/
+        .content-descarga{
+            width: 100%;
+            max-width: 300px;
+            background: transparent;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .descarga-ahora{
+            display: inline-block;
+            text-decoration: none;
+            padding: 15px 20px;
+            background: #286ef2;
+            color: #fff;
+            border-radius: 5px;
+            animation: signal 1.5s infinite;
+        }
+        .descarga-ahora:hover{
+            opacity: 0.9;
+        }
+        .btn-descarga{
+            display: inline-block;
+            padding: 15px 25px;
+            background: #286ef2;
+            color: #fff;
+            border:none;
+            font-size: 16px;
+            border-radius: 5px;
+            outline: 0px;
+            cursor: pointer;
+            animation: signal 1.5s infinite;
+        }
+        .btn-descarga:hover{
+            opacity: 0.9;
+        }
+        .content-descarga i{
+            margin-left: 5px;
+        }
+
+
+/*Estilos generales*/
+
+     /*ESTE KEYFRAME LO UTILICÉ VARIAS VECES*/
+     @keyframes signal{
+        0% {
+        box-shadow: 0 0 0 0 #ffffff
+        }
+        100% {
+            box-shadow: 0 0 0 0.2rem #7f7f7f;
+        }
+    }
+
+    li{
+        margin-bottom: 10px;
+    }
+    body {
+        padding:0px;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 2.5rem; /*rem: 2.5* el tamaño de letra del elemento raíz*/
+        font-family: 'Rubik Gemstones', cursive;
+
+    }
+
+    a:link,:visited {
+        color: black; 
+        font-family: arial; 
+        text-decoration: none;
+    }
+
+    .enlace i{
+        color:  white;
+        background-color: transparent;
+        animation: signal 1.5s infinite;
+    }
+
+    .seccion_oscura{
+        color: white;
+        background: rgb(62, 42, 40);
+        padding: 10px;
+
+    }
+    .seccion_clara{
+        color: #1b1b32;
+        background-color: rgb(217, 226, 230);
+    }
+    .seccion_salmon{
+        color: #1b1b32;
+        background-color: rgb(246, 191, 150);
+    }
+
+    .contenedor{
+        max-width: 800px;
+        text-align: left;
+        margin: 30px;
+    }
+
+    #reloj {
+        font-size: 1.2rem;
+        font-family: Arial, sans-serif;
+        color: black;
+        font-weight: bold;
+        position: inherit;
+        top: 17px;
+        right: 0;
+    }
+
+
+/*iconos online de Google Icons*/
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+    }
+
+/*Video responsivo*/
+    .video-responsivo {
+        overflow:hidden;
+        padding-bottom:400px; /* Adecua este valor para controlar la altura del video */
+        position:relative;
+        height:0;
+    }
+    .video-responsivo iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+
+
+/* Algunos mediaquery para mejorar la adaptación a pantallas más pequeñas*/
+    @media screen and (max-width:767px){
+        .navegacion {
+            padding-top: 2%;
+        }
+    }
+
+    @media (max-width: 289px) {
+        .overlay p {
+        display: none;
+        }
+        .proyecto i,a{
+            font-size: 30px;
+        }
+    }
+    @media (max-width: 338px) {
+        .contenedor_iconos i{
+            font-size: 1rem;
+        
+        }
+    }

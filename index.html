@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Diego Persello">
+    <meta name="description" content="Currículum vitae en html, css y javascript">
+    <meta name="keywords" content="HTML, CSS, JAVASCRIPT">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo -->
+    <title>Desarrollo front-end - proyecto CV</title>
+    <!-- Favicoon -->
+    <link rel="icon" type="image/x-icon" href="imagenes-iconos-pdf/icono_pestaña.png">
+    <!-- Incluyo mi hoja de estilos-->
+    <link rel="stylesheet" href="CV.css">
+    <!-- Incluyo bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+<body>
+  <!-- boton para ir al inicio-->
+  <div class="flechita">
+    <a href="#inicio" title="SUBIR TOP"><span class="fas fa-angle-up"></span></a>
+ </div>
+  <!-- barra de navegacion sticky con bootstrap-->
+  <nav id="navbar_top" class="navbar navbar-expand-md navbar-light sticky-top">
+      <div class="container-fluid navegacion" ><!-- se ajusta al 100% del navegador-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-file-earmark-person-fill Logo_navbar">CV</i>
+        </button>
+        <div id="reloj" class="relojito"></div>
+        <div class="collapse navbar-collapse justify-content-end align-items-end" id="navbar-toggler">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre_mi">Presentación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#estudios">Estudios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  <!-- Seccion principal -->
+  <section class="bienvenida align-items-stretch">
+      <div id="inicio" class="bienvenida_principal d-flex flex-column justify-content-center align-items-center">
+          <img class="imagen_perfil" src="imagenes-iconos-pdf/cv_2022.png" alt="perfil">
+          <h1>Hola, soy Diego Persello</h1>
+          <h2>Soy un técnico informático especializado en electrónica y robótica </h2>   
+      </div>
+      <div>
+          <img class="imagen_desarrollo img-fluid" src="imagenes-iconos-pdf/desarrollador.png" alt="Desarrollo">
+      </div>
+  </section>
+  <!--Seccion sobremi-->
+  <div class="video-responsivo" id="sobre_mi">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ds8lRXWfoPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <!-- Seccion Estudios-->
+  <section class="seccion_oscura" id="estudios">
+      <div class="contenedor estudios">
+          <h1>Estudios</h1>
+          <li>2010-2015: Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a scrambled it. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</li>
+          <li>2015-2017: Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</li>
+          <li>2017-actualidad: There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</li>
+      </div>
+  </section>
+  <!-- Seccion habilidades -->
+  <section class="habilidades seccion_clara" id="habilidades">
+    <div class="container text-center ">
+      <div class="row">
+        <!-- desarrollo web -->
+        <div class="columna col-12 col-md-4">
+          <i class="material-symbols-outlined">
+            computer
+          </i>
+          <p class="habilidades_titulo">desarrollo web</p>
+          <p>Sed dictum ac justo sed imperdiet. Curabitur hendrerit blandit risus, sit amet finibus lacus mattis a. Phasellus iaculis suscipit dui non auctor. Vestibulum eu dolor ac urna porta sagittis sed ut est. Vivamus porta fermentum ex ac sagittis. Donec in semper nisl, sit amet aliquam enim. Nullam eget euismod purus, at dapibus ex.</p>
+          <div class="contenedor_badges">
+            <span class="badge rounded-pill text-bg-primary">HTML</span>
+            <span class="badge rounded-pill text-bg-primary">CSS</span>
+            <span class="badge rounded-pill text-bg-primary">JAVASCRIPT</span>
+          </div>
+        </div>
+        <!-- desarrollo android -->
+        <div class=" columna col-12 col-md-4">
+          <i class="material-symbols-outlined">
+            android
+          </i>
+          <p class="habilidades_titulo">desarrollo android</p>
+          <p class="descripcion_titulo">Vestibulum vitae ante eget ante pulvinar venenatis ut vel eros. Suspendisse tempor tortor erat, vel malesuada nisl viverra in. Phasellus iaculis suscipit dui non auctor. Vestibulum eu dolor ac urna porta sagittis sed ut est. Vivamus porta fermentum ex ac sagittis. Donec in semper nisl, sit amet aliquam enim. Nullam eget euismod purus, at dapibus ex.</p>
+          <div class="contenedor_badges">
+            <span class="badge rounded-pill text-bg-primary">KOTLIN</span>
+            <span class="badge rounded-pill text-bg-primary">JAVA</span>
+            <span class="badge rounded-pill text-bg-primary">C#</span>
+          </div>
+        </div>
+        <!-- otros proyectos-->
+        <div class=" columna col col-md-4">
+          <i class="material-symbols-outlined">
+            construction
+          </i>
+          <p class="habilidades_titulo">desarrollo varios</p>
+          <p class="descripcion_titulo">Suspendisse tempor tortor erat, vel malesuada nisl viverra in. Phasellus iaculis. Vestibulum eu dolor ac urna porta sagittis sed ut est. Vivamus porta fermentum ex ac sagittis. Donec in semper nisl, sit amet aliquam enim. Nullam eget euismod purus, at dapibus ex.</p>
+          <div class="contenedor_badges">
+            <span class="badge rounded-pill text-bg-primary">C</span>
+            <span class="badge rounded-pill text-bg-primary">C++</span>
+            <span class="badge rounded-pill text-bg-primary">PHYTON</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--Seccion proyectos-->
+    <section class="proyectos_recientes seccion_salmon d-flex flex-column" id="proyectos"> 
+      <h1>Algunos de mis proyectos</h1>
+      <!-- Fotos de los trabajos -->
+      <div class="container text-center"></div>
+        <div class="row">
+          <!-- proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes-iconos-pdf/proyecto1.png" alt="proyecto1">
+              <div class="overlay">
+                <p>Curabitur dolor erat, dignissim ac eros quis, vulputate molestie massa.</p>
+                <div class="d-inline-flex">
+                  <a href="https://www.youtube.com/watch?v=o_iMACpZz7c&ab_channel=ESPYCreations" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i> 
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes-iconos-pdf/proyecto2.png" alt="proyecto2">
+              <div class="overlay">
+                <p>Curabitur dolor erat, dignissim ac eros quis, vulputate molestie massa.</p>
+                <div class="d-inline-flex">
+                  <a href="https://youtu.be/Siu_XT2YWg4" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i> 
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes-iconos-pdf/proyecto3.png" alt="proyecto3">
+              <div class="overlay">
+                <p>Curabitur dolor erat, dignissim ac eros quis, vulputate molestie massa.</p>
+                <div class="d-inline-flex">
+                  <a href="https://youtu.be/uTeXrnwu2yc" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i> 
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes-iconos-pdf/proyecto4.png" alt="proyecto4">
+              <div class="overlay">
+                <p>Curabitur dolor erat, dignissim ac eros quis, vulputate molestie massa.</p>
+                <div class="d-inline-flex">
+                  <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-book"></i>
+                  </a>
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i> 
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes-iconos-pdf/proyecto5.png" alt="proyecto5">
+              <div class="overlay">
+                <p>Curabitur dolor erat, dignissim ac eros quis, vulputate molestie massa.</p>
+                <div class="d-inline-flex">
+                  <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-book"></i>
+                  </a>
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i> 
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- proyecto 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes-iconos-pdf/proyecto6.png" alt="proyecto6">
+              <div class="overlay">
+                <p>Curabitur dolor erat, dignissim ac eros quis, vulputate molestie massa.</p>
+                <div class="d-inline-flex">
+                  <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-book"></i>
+                  </a>
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i> 
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      <div class="enlace">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-secondary">
+              <i class="bi bi-code-square"> VER MÁS TRABAJOS </i>
+              <i class="bi bi-code-square"></i>
+            </button>
+          </a>
+      </div>
+    </section>
+<!--Seccion contacto-->
+    <section class="segundo_contenedor" id="contacto">
+      <div class="contenedor">
+          <h1 class="text-center">CONTACTO</h1>
+          <div class="contenedor_iconos">
+            <a href="mailto:diego.persello@gmail.com" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-envelope-at"></i>
+            </a>
+            <a href="https://wa.me/5492236958079" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://t.me/diego_persello" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-telegram"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/diego.persello/" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-messenger"></i>
+            </a>  
+          </div>
+      </div>
+      <div class="content-descarga">
+        <button class="btn-descarga" id="btn">
+          Descargar en pdf<i class="fa fa-arrow-right"></i>
+        </button>
+        <a href="imagenes-iconos-pdf\Persello_Diego.pdf" class="descarga-ahora" id="download">
+          Click para descargar<i class="fa fa-download"></i>
+        </a>
+      </div>
+  </section>
+<!--Seccion derechos de autor-->
+  <section id="derechos_autor" class="derechos_autor">
+    <i class="bi bi-c-circle"> Creado por Diego Persello <i class="bi bi-c-circle"></i>
+    </i>
+    <p> 2023 </p>
+  </section>
+    <!-- Incluyo javascript bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Incluyo mi hoja javascript-->
+    <script src="CV.js"> </script>
+</body>
+</html>
